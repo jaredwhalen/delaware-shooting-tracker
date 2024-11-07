@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/delaware-shooting-tracker/static/css/main.925e6649.chunk.css",
+    "main.js": "/delaware-shooting-tracker/static/js/main.7c23141e.chunk.js",
+    "main.js.map": "/delaware-shooting-tracker/static/js/main.7c23141e.chunk.js.map",
+    "runtime-main.js": "/delaware-shooting-tracker/static/js/runtime-main.0b612f94.js",
+    "runtime-main.js.map": "/delaware-shooting-tracker/static/js/runtime-main.0b612f94.js.map",
+    "static/css/2.af5c4e38.chunk.css": "/delaware-shooting-tracker/static/css/2.af5c4e38.chunk.css",
+    "static/js/2.e978d9a5.chunk.js": "/delaware-shooting-tracker/static/js/2.e978d9a5.chunk.js",
+    "static/js/2.e978d9a5.chunk.js.map": "/delaware-shooting-tracker/static/js/2.e978d9a5.chunk.js.map",
+    "index.html": "/delaware-shooting-tracker/index.html",
+    "static/css/2.af5c4e38.chunk.css.map": "/delaware-shooting-tracker/static/css/2.af5c4e38.chunk.css.map",
+    "static/css/main.925e6649.chunk.css.map": "/delaware-shooting-tracker/static/css/main.925e6649.chunk.css.map",
+    "static/js/2.e978d9a5.chunk.js.LICENSE.txt": "/delaware-shooting-tracker/static/js/2.e978d9a5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0b612f94.js",
+    "static/css/2.af5c4e38.chunk.css",
+    "static/js/2.e978d9a5.chunk.js",
+    "static/css/main.925e6649.chunk.css",
+    "static/js/main.7c23141e.chunk.js"
+  ]
+}
