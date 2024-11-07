@@ -1,0 +1,66 @@
+@import "../values.scss";
+
+.g-table-container {
+  .g-table-wrapper {
+    @include mobile {
+      overflow-x: scroll;
+    }
+
+    table {
+      font-family: $dnj-sans;
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+
+      td,
+      th {
+        text-align: right;
+        padding: 8px;
+        border: 1px solid #d8d6d3;
+
+        &.border-right {
+          border-right: 2px solid black;
+        }
+      }
+
+      td:first-child,
+      th:first-child {
+        text-align: left;
+      }
+
+      th svg {
+        opacity: 0.1;
+        padding-left: 3px;
+      }
+
+      th.active svg {
+        opacity: 0.5;
+      }
+
+      tr.colored th {
+        background-color: #f2f2f2 !important;
+      }
+
+      tr.white th {
+        background-color: #ffffff !important;
+      }
+
+      .g-table-header-no-border {
+        * {
+          border: none;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+#g-multi-victim-shootings {
+  #g-multi-victim-shootings-wrapper {
+    table {
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+    }
+  }
+}

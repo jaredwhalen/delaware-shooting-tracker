@@ -1,0 +1,113 @@
+@import '../values.scss';
+
+#g-most-recent-shootings-filter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .g-filter {
+    font-family: $dnj-sans;
+    position: relative;
+
+    &:hover {
+      .g-filter-label {
+        color: #333;
+      }
+
+      .g-filter-dropdown {
+        display: block;
+        cursor: pointer;
+      }
+    }
+
+    .g-filter-label {
+      padding: 5px 10px;
+      margin: 5px 5px 5px 0;
+      background-color: rgba(nth($grays, 7), 0.5);
+      border-radius: 3px;
+      white-space: nowrap;
+      color: #666;
+    }
+
+    .g-filter-dropdown {
+      display: none;
+      position: absolute;
+      top: 35px;
+      background: white;
+      z-index: 1000;
+      max-height: 200px;
+      overflow-y: scroll;
+      min-width: 100px;
+
+      .g-filter-dropdown-option {
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-top: 1px solid;
+        padding: 5px 10px;
+        border-color: rgba(nth($grays, 7), 1);
+        font-size: 12px;
+
+        &:last-of-type {
+          border-bottom: 1px solid rgba(nth($grays, 7), 1);
+        }
+
+        &:hover {
+          background: rgba(nth($grays, 7), 1);
+        }
+      }
+    }
+
+    &[data-active="true"] {
+      display: none;
+
+      .g-filter-label {
+        background-color: rgba(nth($grays, 7), 0.25);
+      }
+    }
+  }
+
+  #victim-search {
+    position: relative;
+
+    svg {
+      margin: auto;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 8px;
+      color: rgba(nth($grays, 6), 1);
+      font-size: 14px;
+    }
+
+    input {
+      height: 30px;
+      border: 1px solid rgba(nth($grays, 7), 1);
+      border-radius: 3px;
+      padding-left: 25px;
+      font-size: 16px;
+    }
+  }
+}
+
+#g-active-filters {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 5px;
+
+  .g-active-filter {
+    font-family: $dnj-sans;
+    position: relative;
+    background-color: rgba($accent, 1);
+    padding: 5px 10px;
+    margin: 5px 5px 5px 0;
+    border-radius: 3px;
+    white-space: nowrap;
+    color: white;
+
+    &:hover {
+      background-color: rgba($accent, 0.75);
+      cursor: pointer;
+    }
+  }
+}

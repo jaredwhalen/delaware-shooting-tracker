@@ -1,0 +1,206 @@
+@import '../values.scss';
+
+.g-pod-chart-legend {
+  display: flex;
+  margin-top: 5px;
+  font-family: $dnj-sans;
+
+  .g-pod-chart-legend-item {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+
+    .g-pod-chart-legend-item-symbol {
+      margin-right: 5px;
+
+      &.square {
+        width: 10px;
+        height: 10px;
+        background-color: black;
+        opacity: 0.4;
+      }
+
+      &.line {
+        width: 12px;
+        height: 4px;
+      }
+
+      &.circle {
+        width: 12px;
+        height: 12px;
+        border-radius: 100%;
+        border: 2px solid #444141;
+        opacity: 0.75;
+
+        &.cluster {
+          border: none;
+          background-color: #FFE1C3;
+          width: 30px;
+          height: 30px;
+          position: relative;
+
+          &::after {
+            content: '9';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            font-size: 12px;
+            font-weight: bold;
+          }
+        }
+      }
+
+      &.current,
+      &.homicide {
+        background-color: $accent;
+      }
+
+      &.previous {
+        background-color: #222;
+      }
+
+      &.incident {
+        background-color: #878787;
+      }
+    }
+  }
+
+  &.scale {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+    align-items: baseline;
+
+    .g-pod-chart-legend-item {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: 0;
+      flex-basis: 100%;
+
+      &:first-of-type {
+        div {
+          text-align: left;
+        }
+      }
+
+      .g-pod-chart-legend-item-symbol {
+        flex-basis: 100%;
+        height: 10px;
+        margin-right: 0;
+      }
+
+      div {
+        font-size: 12px;
+        font-weight: 300;
+        color: #666;
+        width: 100%;
+        text-align: right;
+      }
+    }
+  }
+}
+
+.g-chart {
+  width: 100%;
+  position: relative;
+
+  .domain {
+    display: none;
+  }
+
+  text {
+    font-size: 15px;
+    color: nth($grays,5);
+  }
+
+  text.labels {
+    font-size: 12px;
+    color: #999999;
+    font-weight: bold;
+    pointer-events: none;
+
+    &.hidden {
+      display: none;
+    }
+  }
+
+  .axis,
+  .gridlines {
+    line,
+    path {
+      stroke: #ddd;
+    }
+  }
+
+  .x.axis {
+    * {
+      text-anchor: middle;
+      // font-size: 12px;
+    }
+
+    &.alternate {
+      g {
+        display: none;
+
+        &:nth-child(2n) {
+          display: block;
+        }
+      }
+    }
+
+    @include mobile {
+      * {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .y {
+    .tick:first-of-type {
+      display: none;
+    }
+  }
+
+  .g-line {
+    stroke-width: 2px;
+    stroke: nth($grays, 6);
+
+    &.current {
+      stroke: nth($oranges, 5);
+      stroke-width: 4px;
+    }
+
+    &.previousYear {
+      stroke: nth($grays, 2);
+    }
+  }
+
+  &.bar {
+    display: inline-block;
+    width: 100%;
+    margin-top: 5px;
+    font-family: $dnj-sans;
+
+    .g-bar-label {
+      width: 80px;
+    }
+
+    .g-bar-rect-wrap {
+      display: flex;
+      align-items: center;
+
+      .g-bar-rect {
+        background-color: $accent;
+      }
+
+      .g-bar-rect-number {
+        font-weight: bold;
+        padding-left: 5px;
+        font-size: 14px;
+        text-align: right;
+      }
+    }
+  }
+}

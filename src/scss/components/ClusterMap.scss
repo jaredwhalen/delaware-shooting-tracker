@@ -1,0 +1,10 @@
+@import '../values.scss';
+
+.mapboxgl-ctrl-geocoder .suggestions-wrapper {
+  * {
+    font-family: $dnj-sans;
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 20px;
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/delaware-online/storytelling-embeds/master/projects/2021-07-shooting-tracker/static/css/main.32f0df5c.chunk.css",
+    "main.js": "/delaware-online/storytelling-embeds/master/projects/2021-07-shooting-tracker/static/js/main.c93d436e.chunk.js",
+    "main.js.map": "/delaware-online/storytelling-embeds/master/projects/2021-07-shooting-tracker/static/js/main.c93d436e.chunk.js.map",
+    "runtime-main.js": "/delaware-online/storytelling-embeds/master/projects/2021-07-shooting-tracker/static/js/runtime-main.66767d3c.js",
+    "runtime-main.js.map": "/delaware-online/storytelling-embeds/master/projects/2021-07-shooting-tracker/static/js/runtime-main.66767d3c.js.map",
+    "static/css/2.af5c4e38.chunk.css": "/delaware-online/storytelling-embeds/master/projects/2021-07-shooting-tracker/static/css/2.af5c4e38.chunk.css",
+    "static/js/2.5b47d13c.chunk.js": "/delaware-online/storytelling-embeds/master/projects/2021-07-shooting-tracker/static/js/2.5b47d13c.chunk.js",
+    "static/js/2.5b47d13c.chunk.js.map": "/delaware-online/storytelling-embeds/master/projects/2021-07-shooting-tracker/static/js/2.5b47d13c.chunk.js.map",
+    "index.html": "/delaware-online/storytelling-embeds/master/projects/2021-07-shooting-tracker/index.html",
+    "static/css/2.af5c4e38.chunk.css.map": "/delaware-online/storytelling-embeds/master/projects/2021-07-shooting-tracker/static/css/2.af5c4e38.chunk.css.map",
+    "static/css/main.32f0df5c.chunk.css.map": "/delaware-online/storytelling-embeds/master/projects/2021-07-shooting-tracker/static/css/main.32f0df5c.chunk.css.map",
+    "static/js/2.5b47d13c.chunk.js.LICENSE.txt": "/delaware-online/storytelling-embeds/master/projects/2021-07-shooting-tracker/static/js/2.5b47d13c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.66767d3c.js",
+    "static/css/2.af5c4e38.chunk.css",
+    "static/js/2.5b47d13c.chunk.js",
+    "static/css/main.32f0df5c.chunk.css",
+    "static/js/main.c93d436e.chunk.js"
+  ]
+}

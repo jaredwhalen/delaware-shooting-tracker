@@ -1,0 +1,11 @@
+@import "../values.scss";
+
+#g-shootings-by-year {
+  #g-shootings-by-year-wrapper {
+    table {
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+    }
+  }
+}

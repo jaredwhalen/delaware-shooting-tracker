@@ -1,0 +1,31 @@
+@import '../values.scss';
+
+.g-tooltip {
+  position: absolute;
+  padding: 8px;
+  margin-top: -20px;
+  font: 14px $dnj-sans;
+  background: #fff;
+  border: 1px solid #666;
+  pointer-events: none;
+  z-index: 9999;
+
+  min-width: 120px;
+
+  h4 {
+    margin: 0px 0px 5px;
+  }
+
+  .row {
+    padding: 1px 0px;
+    color: #666;
+    strong {
+      color: #222;
+    }
+
+    &.current {
+      color: $accent;
+      font-weight: bold;
+    }
+  }
+}

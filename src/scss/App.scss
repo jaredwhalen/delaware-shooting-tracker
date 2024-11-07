@@ -1,0 +1,102 @@
+@import './values.scss';
+
+html {
+    scroll-behavior: smooth;
+}
+
+.topper__inner {
+  opacity: 0;
+}
+
+.placeholder {
+  width: 100%;
+  height: 400px;
+
+  svg {
+    fill: none;
+    stroke: gray;
+    stroke-width: 1;
+  }
+}
+
+#g-wrapper-2021-07-shooting-tracker {
+  width: 100%;
+  text-align: center;
+}
+
+.article-inner {
+  background-color: #282626 !important;
+}
+
+.article-inner p:not(.g-p-project) {
+  display: none;
+}
+
+p.g-intro-p {
+  // margin-left: calc(var(--article-padding-horiz) - 5px);
+  // margin-right: calc(var(--article-padding-horiz) - 5px);
+}
+
+.sectioned {
+  margin-left: 0 !important;
+}
+
+.g-instruction {
+  margin: 5px 0 0;
+  font-family: $dnj-sans;
+  text-transform: uppercase;
+  color: nth($grays, 3) !important;
+}
+
+.g-underline {
+  border-bottom: 2px solid;
+  padding-bottom: 2px;
+
+  &.killed {
+    border-color: $accent;
+  }
+}
+
+.g-highlight {
+  &.killed {
+    color: $accent;
+  }
+}
+
+#g-topper-wrapper {
+  color: white !important;
+  font-weight: 100;
+  font-family: $dnj-serif;
+}
+
+.topper__byline {
+  color: white;
+}
+
+.g-note {
+  margin-top: 5px;
+  line-height: 1.4;
+  font-family: $dnj-sans;
+  font-size: 14px;
+  color: nth($grays, 4);
+  font-style: italic;
+}
+
+#g-skip-intro {
+  width: 100%;
+  text-align: center;
+  margin: 15px 0px;
+  button {
+    font-family: $dnj-sans;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    opacity: 0.75;
+    outline: none;
+
+  }
+}

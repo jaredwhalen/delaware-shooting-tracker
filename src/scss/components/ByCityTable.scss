@@ -1,0 +1,15 @@
+@import "../values.scss";
+
+#g-shootings-by-city {
+  margin-top: 10px;
+  #g-shootings-by-city-wrapper {
+    tr:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
+
+    th {
+      cursor: pointer;
+      text-transform: capitalize;
+    }
+  }
+}
