@@ -1,4 +1,4 @@
-# 2021-07-shooting-tracker
+# delaware-shooting-tracker
 
 This is an old React app deployed to the Gannett CDN.
 
